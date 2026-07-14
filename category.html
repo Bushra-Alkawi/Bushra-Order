@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BushraOrder | Category</title>
+    <link rel="icon" href="images/bushra-logo-replaced.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+        <!-- top header start -->
+        <div class="top-header d-flex align-items-center py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 col-md-4">
+                        <a href="">
+                            <img width="40" src="images/bushra-logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="col-10 col-md-4">
+                        <input class="form-control" type="text" placeholder="ابحث عن طبقك أو مطعمك المفضل">
+                    </div>
+
+                    <div class="col-md-4 left-header d-flex align-items-center d-lg-flex justify-content-end d-none ">
+                        <a class="ps-3 pe-2" href="#cart" data-bs-toggle="offcanvas" role="button"
+                            aria-controls="offcanvasExample">
+                            <span>السلة</span>
+                            <i class="fa-solid fas fas fa-shopping-cart"></i>
+                        </a>
+                        <a class="ps-3 pe-2" href="#login" data-bs-toggle="offcanvas" role="button"
+                            aria-controls="offcanvasExample">
+                            <span>الدخول</span>
+                            <i class="fa-solid fas fa-user"></i>
+                        </a>
+
+                        <a class="ps-3 pe-2" href="">
+                            <span>المفضلة</span>
+                            <i class="fa-solid fas far fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top header end -->
+        <!-- bottom header start -->
+        <div class="bottom-header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#cart">
+                            <span class="fas fa-shopping-cart"></span>
+                        </button>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#login">
+                            <span class="far fa-solid fa-user"></span>
+                        </button>
+
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">المأكولات الشرقية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">المأكولات الغربية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">المأكولات البحرية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">المقبلات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">الحلويات</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- bottom header end -->
+    </header>
+    <!-- header end -->
+
+
+    <!-- Bunner start -->
+    <section class="bunner position-relative">
+        <h1 class="category-title">قسم الحلويات</h1>
+    </section>
+    <!-- Bunner end -->
+
+
+    <div class="containern mt-5 mx-3">
+
+
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-5">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item "><a class="text-black" href="index.html">الرئيسية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">الحلويات</li>
+            </ol>
+        </nav>
+
+        <button class="my-btn d-sm-none" data-bs-toggle="offcanvas" href="#filter" type="button">
+            <span class="fas fa-filter fa-2x"></span>
+        </button>
+
+
+        <div class="row">
+            <div class="col-md-3 d-none d-md-block">
+                 <div class="filter-section">
+                <h4 class="filter-title">فلترة بالبحث</h4>
+                <input type="text" class="form-control" placeholder="ابحث عن طبقك أو مطعمك المفضل">
+
+                <div class="dropdown mt-3">
+                    <!-- The trigger element looks like a standard Bootstrap form-select -->
+                    <button class="form-select text-start" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        اختر مطعم
+                    </button>
+
+                    <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item custom-hover" href="#">مطعم بيت المختار</a></li>
+                        <li><a class="dropdown-item custom-hover" href="#">مطبخ أبو الجدي</a></li>
+                        <li><a class="dropdown-item custom-hover" href="#">حلويات الوسام</a></li>
+                        <li><a class="dropdown-item custom-hover" href="#">حلويات الشام</a></li>
+                        <li><a class="dropdown-item custom-hover" href="#">بن عثمان</a></li>
+                        <li><a class="dropdown-item custom-hover" href="#">آيس كيك</a></li>
+                    </ul>
+                </div>
+
+
+                <hr>
+
+                <h4 class="filter-title">فلترة حسب الأصناف</h4>
+                <div class="filter-radio d-flex flex-column gap-1">
+                    <div>
+                        <input type="radio" name="category">
+                        <label for="" class="form-label">مأكولات شرقية</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="category">
+                        <label for="" class="form-label">مأكولات غربية</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="category">
+                        <label for="" class="form-label">مأكولات بحرية</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="category">
+                        <label for="" class="form-label">مقبلات</label>
+                    </div>
+                    <div>
+                        <input  type="radio" name="category" checked>
+                        <label for="" class="form-label">حلويات</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="category">
+                        <label for="" class="form-label">مشروبات</label>
+                    </div>
+                </div>
+
+                <h4 class="filter-title mt-3">فلترة حسب الأسعار</h4>
+                <div class="filter-radio d-flex flex-column gap-1">
+                    <div>
+                        <input type="radio" name="category">
+                        <label for="" class="form-label">أقل من 5$</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="category">
+                        <label for="" class="form-label">أقل من 20$</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="category">
+                        <label for="" class="form-label">أقل من 50$</label>
+                    </div>
+
+                </div>
+            </div>
+
+
+            </div>
+
+            <div class="col-md-9">
+                <div class="row row-cols-2 row-cols-md-3">
+                    <div class="col product mb-3 desserts">
+                        <div class="card overflow-hidden h-100">
+                            <div class="quick-icons">
+                                <a href="#quick-cake-product" data-bs-toggle="modal"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                            </div>
+
+                            <img src="images/products/cake.png" alt="">
+                            <div class="product-info px-3">
+                                <h3>قالب كاتو</h3>
+                                <p>قالب كيك بالشوكولا لعشر أشخاص</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="price my-2">
+                                    <span>السعر: 12$</span>
+                                </div>
+                                <button onclick="alert('تم إضافة المنتج للسلة')"
+                                    class="btn addtocart-btn w-100 mb-3">إضافة
+                                    إلى السلة</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col product mb-3 drinks">
+                        <div class="card overflow-hidden h-100">
+                            <div class="quick-icons">
+                                <a href="#quick-milkchic-product" data-bs-toggle="modal"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                            </div>
+                            <img src="images/products/milk-chic.png" alt="">
+                            <div class="product-info px-3">
+                                <h3>ميلك شيك فريز</h3>
+                                <p> كاسة ميلك شيك فريز مع الكريمة الغنية </p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="price my-2">
+                                    <span>السعر: 3$</span>
+                                </div>
+                                <button onclick="alert('تم إضافة المنتج للسلة')"
+                                    class="btn addtocart-btn w-100 mb-3">إضافة
+                                    إلى السلة</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col product mb-3 desserts">
+                        <div class="card overflow-hidden h-100">
+                            <div class="quick-icons">
+                                <a href="#quick-osh-bulbul-product" data-bs-toggle="modal"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                            </div>
+                            <img src="images/products/osh-bilbul.png" alt="">
+                            <div class="product-info px-3">
+                                <h3>عش البلبل</h3>
+                                <p>كيلو عش البلبل بالفستق الحلبي والسمن الحيواني</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="price my-2">
+                                    <span>السعر: 14$</span>
+                                </div>
+                                <button onclick="alert('تم إضافة المنتج للسلة')"
+                                    class="btn addtocart-btn w-100 mb-3">إضافة
+                                    إلى السلة</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col product mb-3 desserts">
+                        <div class="card overflow-hidden h-100">
+                            <div class="quick-icons">
+                                <a href="#quick-cheesecake-product" data-bs-toggle="modal"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                            </div>
+                            <img src="images/products/cheesecake.png" alt="">
+                            <div class="product-info px-3">
+                                <h3>تشيز كيك فريز</h3>
+                                <p>تشيز كيك بالقشطة والنكهة الغنية</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="price my-2">
+                                    <span>السعر: 3$</span>
+                                </div>
+                                <button onclick="alert('تم إضافة المنتج للسلة')"
+                                    class="btn addtocart-btn w-100 mb-3">إضافة
+                                    إلى السلة</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="col product mb-3 desserts">
+                        <div class="card overflow-hidden h-100">
+                            <div class="quick-icons">
+                                <a href="" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                            </div>
+                            <img src="images/products/fruit-salad.png" alt="">
+                            <div class="product-info px-3">
+                                <h3>سلطة فواكه</h3>
+                                <p>سلطة فواكه طازجة مع الكريمة الغنية</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="price my-2">
+                                    <span>السعر: 3$</span>
+                                </div>
+                                <button onclick="alert('تم إضافة المنتج للسلة')"
+                                    class="btn addtocart-btn w-100 mb-3">إضافة
+                                    إلى السلة</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col product mb-3 desserts">
+                        <div class="card overflow-hidden h-100">
+                            <div class="quick-icons">
+                                <a href="" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                            </div>
+                            <img src="images/products/nablsieh.png" alt="">
+                            <div class="product-info px-3">
+                                <h3>كنافة نابلسية</h3>
+                                <p>صحن كنافة نابلسية بالجبنة الطازجة</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="price my-2">
+                                    <span>السعر: 3$</span>
+                                </div>
+                                <button onclick="alert('تم إضافة المنتج للسلة')"
+                                    class="btn addtocart-btn w-100 mb-3">إضافة
+                                    إلى السلة</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer start -->
+
+    <footer>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col f1">
+                    <img src="images/bushra-logo.png" class="footer-logo w-50" alt="logo">
+                    <p>نوصل لك كل ما تحتاجه من المطاعم والمتاجر إلى باب منزلك بأسرع وقت</p>
+                    <ul class="navbar-nav text-white">
+                        <li><i class="fa-solid fa-location-dot"></i>سوريا - دمشق</li>
+                        <li><i class="fa-solid fas fa-phone"></i>0962809931</li>
+                        <li><i class="fa-solid far fa-envelope"></i>bushra.alkawi96@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="col f2">
+                    <h3>الأصناف</h3>
+                    <ul class="navbar-nav">
+                        <li><a href=category.html>المأكولات الشرقية</a></li>
+                        <li><a href=category.html>المأكولات الغربية</a></li>
+                        <li><a href=category.html>المأكولات البحرية</a></li>
+                        <li><a href=category.html>المقبلات</a></li>
+                        <li><a href="category.html">الحلويات</a></li>
+                        <li><a href=category.html>المشروبات</a></li>
+                    </ul>
+                </div>
+
+                <div class="col f3">
+                    <h3>الأكثر طلباً</h3>
+                    <ul class="navbar-nav">
+                        <li><a href=product.html>كروسان اللوتس</a></li>
+                        <li><a href=product.html>عش البلبل</a></li>
+                        <li><a href=product.html>شرحات مطفاية</a></li>
+                        <li><a href=product.html>سكالوب</a></li>
+                        <li><a href=product.html>مشاوي</a></li>
+                        <li><a href=product.html>برغر</a></li>
+                    </ul>
+                </div>
+
+                <div class="col f4">
+                    <h3>النشرة البريدية</h3>
+                    <p>اطلب الآن واستمتع بتوصيل مجاني للطلبات الأولى</p>
+                    <form action="">
+                        <input type="text" placeholder="أدخل البريد الإلكتروني" name="" id="" class="form-control">
+                        <button class="btn subscibe-btn w-100 mt-3">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 mt-3 d-flex flex-column flex-md-row">
+                <div class="col text-center text-md-start">
+                    <img src="images/payments.png" alt="">
+                </div>
+
+                <div class="col text-white text-center text-md-end my-2 my-md-0">
+                    <p>كافة الحقوق محفوظة &copy لموقع طلبات بشرى 2026</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+
+
+    <!-- Quick View Modal Start -->
+    <div class="modal fade" id="quick-cake-product" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">قالب كيك لعشر أشخاص</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <div class="col">
+                            <img class="img-fluid" src="images/products/cake.png" alt="cake image">
+                            <a href="product.html"><button class="btn details-btn w-100">كافة التفاصيل</button></a>
+                        </div>
+
+                        <div class="col d-flex  flex-column justify-content-around ">
+                            <h1 class="modal-title fs-5 fw-bolder my-3">قالب كيك بالشوكولا البلجيكية</h1>
+                            <div class="product-desc">
+                                <div class="components mb-3">
+                                    <span class="fw-bold">المكونات:</span>
+                                    <span> بيض - دقيق- سكر- فانيلا- بيكينع بودر- كاكاو</span>
+
+                                </div>
+                                <div class="calories mb-3">
+                                    <span class="fw-bold">السعرات الحرارية:</span>
+                                    <span>1200 سعرة حرارية</span>
+                                </div>
+                                <div class="quick-reviews d-inline-flex mb-3">
+                                    <span class="fw-bold">تقييمات المستخدمين: </span>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="price mb-3">
+                                    <span class="fw-bold">السعر:</span>
+                                    <span> 12$</span>
+                                </div>
+                            </div>
+
+                            <div class="btns d-flex gap-2">
+                                <div class="btn-group btn-quantity" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn">+</button>
+                                    <button type="button" class="btn">1</button>
+                                    <button type="button" class="btn">-</button>
+                                </div>
+                                <div class="d-flex gap-1 add-btn">
+                                    <button onclick="alert('تم إضافة المنتج للسلة')" class="btn addtocart-btn ">إضافة
+                                        إلى السلة</button>
+                                    <button class="btn buynow-btn">شراء الآن</button>
+                                </div>
+                            </div>
+                            <hr>
+
+
+                            <div class="category mb-3">
+                                <span class="fw-bold">التصنيفات:</span>
+                                <a href="">حلويات غربية</a>
+                            </div>
+
+                            <div class="share">
+                                <span class="fw-bold">المشاركة:</span>
+                                <div class="share-icons d-inline-flex gap-2">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- cart offcanvas start -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">سلة المشتريات</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row-mini-cart">
+                <div class="mini-cart d-flex align-items-center justify-content-around">
+                    <img class="img-fluid w-25" src="images/products/cake.png" alt="">
+                    <p>قالب كيك</p>
+                    <div class="btn-group btn-quantity-mini" role="group" aria-label="Basic example">
+                        <button type="button" class="btn">+</button>
+                        <button type="button" class="btn">1</button>
+                        <button type="button" class="btn">-</button>
+                    </div>
+                </div>
+                <div class="mini-cart d-flex align-items-center justify-content-around">
+                    <img class="img-fluid w-25" src="images/products/croissant.png" alt="">
+                    <p>كروسان اللوتس</p>
+                    <div class="btn-group btn-quantity-mini" role="group" aria-label="Basic example">
+                        <button type="button" class="btn">+</button>
+                        <button type="button" class="btn">1</button>
+                        <button type="button" class="btn">-</button>
+                    </div>
+                </div>
+                <div class="mini-cart d-flex align-items-center justify-content-around">
+                    <img class="img-fluid w-25" src="images/products/osh-bilbul.png" alt="">
+                    <p>عش البلبل</p>
+                    <div class="btn-group btn-quantity-mini" role="group" aria-label="Basic example">
+                        <button type="button" class="btn">+</button>
+                        <button type="button" class="btn">1</button>
+                        <button type="button" class="btn">-</button>
+                    </div>
+                </div>
+                <div class="mini-cart d-flex align-items-center justify-content-around">
+                    <img class="img-fluid w-25" src="images/products/suchi.png" alt="">
+                    <p>سوشي</p>
+                    <div class="btn-group btn-quantity-mini" role="group" aria-label="Basic example">
+                        <button type="button" class="btn">+</button>
+                        <button type="button" class="btn">1</button>
+                        <button type="button" class="btn">-</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-cart-choices">
+                <p class="alert total-price mt-3">مجموع المنتجات: 210$ فقط لا غير</p>
+                <a href="cart.html"><button class="btn show-cart-btn w-100">عرض السلة</button></a>
+                <a href="checkout.html"><button class="btn complete-order-btn w-100 my-3">إتمام الطلب</button></a>
+            </div class="mini-cat-choices">
+
+        </div>
+    </div>
+    <!-- cart offcanvas end -->
+
+    <!-- login offcanvas start -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="login" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">تسجيل الدخول</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div class="mini-login">
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">البريد الإلكتروني</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">كلمة السر</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">تذكرني</label>
+                    </div>
+                    <button type="submit" class="btn login-btn w-100">تسجيل الدخول</button>
+                </form>
+                <div class="mt-2 alert alert-danger w-100 text-center forget-password">
+                    <a href="">نسيت كلمة المرور؟</a>
+                </div>
+                <hr>
+
+                <div class="new-account d-flex flex-column text-center mt-5">
+                    <i class="far fa-user fa-5x mb-2"></i>
+                    <span class="mb-3">لا يوجد لديك حساب؟</span>
+                    <button class="btn new-account-btn w-100">إنشاء حساب جديد</button>
+                </div>
+
+            </div class="mini-login">
+
+        </div>
+    </div>
+    <!-- login offcanvas end -->
+
+
+
+    <!-- filter offcanvas start -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="filter" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div class="filter-section">
+                <h4 class="filter-title">فلترة بالبحث</h4>
+                <input type="text" class="form-control" placeholder="ابحث عن طبقك أو مطعمك المفضل">
+
+                <div class="dropdown mt-3">
+                    <!-- The trigger element looks like a standard Bootstrap form-select -->
+                    <button class="form-select text-start" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        اختر مطعم
+                    </button>
+
+                    <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item custom-hover" href="#">مطعم بيت المختار</a></li>
+                        <li><a class="dropdown-item custom-hover" href="#">مطبخ أبو الجدي</a></li>
+                        <li><a class="dropdown-item custom-hover" href="#">حلويات الوسام</a></li>
+                        <li><a class="dropdown-item custom-hover" href="#">حلويات الشام</a></li>
+                        <li><a class="dropdown-item custom-hover" href="#">بن عثمان</a></li>
+                        <li><a class="dropdown-item custom-hover" href="#">آيس كيك</a></li>
+                    </ul>
+                </div>
+
+
+                <hr>
+
+                <h4 class="filter-title">فلترة حسب الأصناف</h4>
+                <div class="filter-radio d-flex flex-column gap-1">
+                    <div>
+                        <input type="radio" name="category">
+                        <label for="" class="form-label">مأكولات شرقية</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="category">
+                        <label for="" class="form-label">مأكولات غربية</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="category">
+                        <label for="" class="form-label">مأكولات بحرية</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="category">
+                        <label for="" class="form-label">مقبلات</label>
+                    </div>
+                    <div>
+                        <input  type="radio" name="category" checked>
+                        <label for="" class="form-label">حلويات</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="category">
+                        <label for="" class="form-label">مشروبات</label>
+                    </div>
+                </div>
+
+                <h4 class="filter-title mt-3">فلترة حسب الأسعار</h4>
+                <div class="filter-radio d-flex flex-column gap-1">
+                    <div>
+                        <input type="radio" name="category">
+                        <label for="" class="form-label">أقل من 5$</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="category">
+                        <label for="" class="form-label">أقل من 20$</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="category">
+                        <label for="" class="form-label">أقل من 50$</label>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <!-- filter offcanvas end -->
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+
+        <script src="js/bootstrap.js"></script>
+        <script src="js/script.js"></script>
+</body>
+
+</html>
